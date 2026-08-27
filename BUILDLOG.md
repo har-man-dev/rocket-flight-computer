@@ -26,7 +26,7 @@ Ordered soldering iron to permanently solder header pins onto all sensor boards.
 - Upload BMP388 test sketch and confirm altitude readings
 - Begin MPU6050 testing
 
-## August 27, 2026 - Day 1 Evening: BMP388 Success
+## August 27, 2026 - Day 2 Afternoon: BMP388 Success
 
 ### Completed
 - Soldering iron arrived, soldered header pins onto BMP388
