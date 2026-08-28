@@ -3,7 +3,7 @@
 An Arduino based flight computer that logs real time altitude and acceleration data during model rocket launches.
 
 ## Hardware
-- Arduino Nano (ATmega328P)
+- Arduino Nano
 - BMP388 Barometric Pressure/Altitude Sensor
 - MPU6050 6-Axis Accelerometer & Gyroscope
 - Micro SD Card Module
