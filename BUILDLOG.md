@@ -104,3 +104,43 @@ Press fit header pins were the issue. Soldering fixed it immediately.
 - Integrate flight computer into rocket body tube
 - Test full system on 9V battery untethered before launch
 - First launch on A or B motor
+
+
+## August 29, 2026 - Day 4: SD Card Module Resoldered & Packaging Decisions
+
+### Completed
+- Desoldered perpendicular pins from SD card module
+- Resoldered pins flat, SD card module confirmed working with test sketch
+- Decided against inside tube mounting due to space constraints
+- Decided to mount electronics externally on solderable breadboards on outside of rocket tube
+- Ordered solderable breadboards, wire strippers, zip ties
+
+## September 3 – 5, 2026 - Day 5 – 7: Solderable Breadboard Build Attempt 1
+
+### Completed
+- Soldered Nano, BMP388, MPU6050, and SD card module onto first solderable breadboard
+- BMP388 confirmed at I2C address 0x77
+- MPU6050 confirmed at I2C address 0x68
+- All SPI wires confirmed via continuity test
+
+### Problems Encountered
+- SD card module failed to initialize, root cause not fully identified
+- Arduino Nano fried during troubleshooting with multimeter while circuit was powered
+- Desoldering tools insufficient to remove Nano cleanly
+
+### Decision
+- Scrapped first solderable breadboard
+- Starting fresh on second solderable breadboard
+- Using perpendicular SD card module to avoid reorientation issues
+- Building one component at a time, testing each before proceeding
+
+### Lessons Learned
+- Never probe with multimeter while circuit is powered
+- Test each component individually before combining
+- Desoldering a Nano from solderable breadboard is extremely difficult with basic tools
+
+### Next Steps
+- Rebuild on second solderable breadboard
+- Test SD card module first before adding sensors
+- Build Big Bertha rocket
+- Mount electronics externally on rocket tube with ballast for balance
