@@ -26,9 +26,9 @@ An Arduino based flight computer that logs real time altitude and acceleration d
 - Estes Big Bertha rocket airframe
 
 ## Build Phases
-✅ Flight computer electronics complete and tested
-✅ Flight unit soldered on solderable breadboard, confirmed working
-🔧 Phase 3: Rocket build and integration in progress...
+- ✅ Flight computer electronics complete and tested
+- ✅ Flight unit soldered on solderable breadboard, confirmed working
+- 🔧 Phase 3: Rocket build and integration in progress...
 
 ## Build Log
 See [BUILDLOG.md](BUILDLOG.md) for detailed progress notes.
