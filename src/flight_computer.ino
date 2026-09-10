@@ -5,7 +5,7 @@
 #include <MPU6050.h>
 
 #define CS_PIN 10
-#define LAUNCH_THRESHOLD 32740
+#define LAUNCH_THRESHOLD 32700
 #define LANDING_TIME 10000
 #define SEA_LEVEL_HPA 1013.25
 
