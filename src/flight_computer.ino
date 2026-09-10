@@ -5,7 +5,7 @@
 #include <MPU6050.h>
 
 #define CS_PIN 10
-#define LAUNCH_THRESHOLD 32700
+#define LAUNCH_THRESHOLD 8192
 #define LANDING_TIME 10000
 #define SEA_LEVEL_HPA 1013.25
 
@@ -61,6 +61,7 @@ void setup() {
   bmp.setOutputDataRate(BMP3_ODR_50_HZ);
 
   mpu.initialize();
+  mpu.setFullScaleAccelRange(MPU6050_ACCEL_FS_8);
   if (!mpu.testConnection()) {
     Serial.println(F("MPU fail"));
     while (1);
