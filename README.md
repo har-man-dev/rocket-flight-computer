@@ -26,15 +26,14 @@ An Arduino based flight computer that logs real time altitude and acceleration d
 - Estes Big Bertha rocket airframe
 
 ## Build Phases
-- ✅ Phase 1: Electronics prototyping and testing
-- 🔧 Phase 2: Flight unit soldering on perfboard
-- ⏳ Phase 3: Rocket build and integration
-- ⏳ Phase 4: First launch
+✅ Flight computer electronics complete and tested
+✅ Flight unit soldered on solderable breadboard, confirmed working
+🔧 Phase 3: Rocket build and integration in progress...
 
 ## Build Log
 See [BUILDLOG.md](BUILDLOG.md) for detailed progress notes.
 
 ## Goals
-- Complete perfboard flight unit by early September 2026
-- First launch before UW Fall Quarter begins
-- Document full flight data analysis after first launch
+* Flight unit soldered and confirmed working September 10th 2026
+* First launch mid September 2026
+* Document full flight data analysis after first launch
