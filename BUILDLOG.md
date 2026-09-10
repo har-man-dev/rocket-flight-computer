@@ -144,3 +144,21 @@ Press fit header pins were the issue. Soldering fixed it immediately.
 - Test SD card module first before adding sensors
 - Build Big Bertha rocket
 - Mount electronics externally on rocket tube with ballast for balance
+
+## September 10, 2026 - Day 8: Flight Computer Complete
+
+### Completed
+- Rebuilt flight computer successfully on second solderable breadboard
+- Lost second Nano to solder bridge, third Nano build succeeded
+- BMP388, MPU6050, and SD card all confirmed working on permanent soldered board
+- Flight data logged and verified, clean altitude and sensor readings confirmed
+- Engines arrived
+- Soldered board photo uploaded to repo
+- README updated to reflect Phase 2 complete
+- Full system tested untethered on 9V battery, confirmed working
+- Clean flight data logged without USB connection
+
+### Next Steps
+- Build Estes Big Bertha rocket
+- Mount flight computer externally on rocket tube
+- First launch on A8-3 motor
