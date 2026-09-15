@@ -1,10 +1,12 @@
 # Rocket Flight Computer
 
-An Arduino based flight computer that logs real time altitude and acceleration data during model rocket launches.
+An Arduino-based flight computer that logs real-time altitude and acceleration data during model rocket launches.
 
 ## Status
 ✅ Flight computer electronics complete and tested
-🔧 Rocket build phase - parts ordered, awaiting delivery
+✅ Flight unit soldered on solderable breadboard, confirmed working
+✅ Rocket built
+⏳ Phase 4: Instrumented launch pending custom payload rocket
 
 ## Features
 - Real-time altitude logging via BMP388 barometric pressure sensor
@@ -23,11 +25,11 @@ An Arduino based flight computer that logs real time altitude and acceleration d
 - MPU6050 6-Axis Accelerometer and Gyroscope
 - Micro SD Card Module with Logic Level Converter
 - 9V Battery Power
-- Estes The Amazon rocket airframe
+- Estes Amazon rocket airframe
 
 ## Build Phases
 - ✅ Phase 1: Electronics prototyping and testing
-- ✅ Phase 2: Flight unit soldered on solderable breadboard  
+- ✅ Phase 2: Flight unit soldered on solderable breadboard
 - ✅ Phase 3: Rocket built
 - ⏳ Phase 4: Instrumented launch pending custom payload rocket
 
