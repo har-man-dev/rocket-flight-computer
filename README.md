@@ -23,17 +23,18 @@ An Arduino based flight computer that logs real time altitude and acceleration d
 - MPU6050 6-Axis Accelerometer and Gyroscope
 - Micro SD Card Module with Logic Level Converter
 - 9V Battery Power
-- Estes Big Bertha rocket airframe
+- Estes The Amazon rocket airframe
 
 ## Build Phases
-- ✅ Flight computer electronics complete and tested
-- ✅ Flight unit soldered on solderable breadboard, confirmed working
-- 🔧 Phase 3: Rocket build and integration in progress...
+- ✅ Phase 1: Electronics prototyping and testing
+- ✅ Phase 2: Flight unit soldered on solderable breadboard  
+- ✅ Phase 3: Rocket built
+- ⏳ Phase 4: Instrumented launch pending custom payload rocket
 
 ## Build Log
 See [BUILDLOG.md](BUILDLOG.md) for detailed progress notes.
 
 ## Goals
-* Flight unit soldered and confirmed working September 10th 2026
-* First launch mid September 2026
-* Document full flight data analysis after first launch
+- Flight unit soldered and confirmed working September 2026
+- Instrumented launch pending custom payload rocket build
+- Document full flight data analysis after first launch
