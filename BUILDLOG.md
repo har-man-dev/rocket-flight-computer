@@ -77,7 +77,7 @@ Press fit header pins were the issue. Soldering fixed it immediately.
 ## August 28, 2026 - Day 3 Afternoon: Rocket Phase Planning & Parts Ordered
 
 ### Decisions Made
-- Selected Estes Big Bertha (1948) as flight vehicle, 1.64 inch body tube diameter
+- Selected Estes The Amazon (1948) as flight vehicle, 1.64 inch body tube diameter
 - Estes Alpha III Launch Set 1427 ordered for launch pad and controller
 - Engine bulk pack A8-3/B4-4/B6-4 ordered, arriving September 5
 - Decided against breadboard for flight unit due to vibration risk
@@ -89,7 +89,7 @@ Press fit header pins were the issue. Soldering fixed it immediately.
 - Solution: desolder pins using AUSTOR desoldering kit arriving tomorrow, resolder flat
 
 ### Parts Ordered
-- Estes Big Bertha kit 1948
+- Estes The Amazon kit 1948
 - Estes Alpha III Launch Set 1427 with pad and controller
 - Engine bulk pack A8-3/B4-4/B6-4, 9 engines total
 - ELEGOO perfboard variety pack, 5 sizes
@@ -100,7 +100,7 @@ Press fit header pins were the issue. Soldering fixed it immediately.
 - Desolder and resolder SD card module pins flat
 - Plan perfboard component layout to fit inside 42mm body tube
 - Solder permanent flight unit on perfboard
-- Build Big Bertha rocket
+- Build The Amazon rocket
 - Integrate flight computer into rocket body tube
 - Test full system on 9V battery untethered before launch
 - First launch on A or B motor
@@ -142,7 +142,7 @@ Press fit header pins were the issue. Soldering fixed it immediately.
 ### Next Steps
 - Rebuild on second solderable breadboard
 - Test SD card module first before adding sensors
-- Build Big Bertha rocket
+- Build The Amazon rocket
 - Mount electronics externally on rocket tube with ballast for balance
 
 ## September 10, 2026 - Day 8: Flight Computer Complete
@@ -159,6 +159,25 @@ Press fit header pins were the issue. Soldering fixed it immediately.
 - Clean flight data logged without USB connection
 
 ### Next Steps
-- Build Estes Big Bertha rocket
+- Build Estes The Amazon rocket
 - Mount flight computer externally on rocket tube
 - First launch on A8-3 motor
+
+## September 15, 2026 - Phase 4 Update: Launch Pending
+
+### Decision
+- External mounting on Estes The Amazon not viable due to weight constraints
+- Electronics package approximately 90-95g exceeds motor lift capacity for small Estes rockets
+- Decision to defer instrumented launch until custom payload rocket is built
+- Flight computer electronics and code fully complete and functional
+
+### Next Steps
+- Build custom payload rocket with proper payload bay sized for flight computer
+- Potentially through UW rocketry club or independent build next year
+- Begin new project
+
+### Project Status
+- Phase 1: Electronics prototyping and testing - COMPLETE
+- Phase 2: Flight unit soldered on solderable breadboard - COMPLETE
+- Phase 3: Rocket build complete, integration pending payload solution - COMPLETE
+- Phase 4: Instrumented launch - PENDING custom rocket build
