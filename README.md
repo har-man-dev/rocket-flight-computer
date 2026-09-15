@@ -3,10 +3,10 @@
 An Arduino-based flight computer that logs real-time altitude and acceleration data during model rocket launches.
 
 ## Status
-✅ Flight computer electronics complete and tested
-✅ Flight unit soldered on solderable breadboard, confirmed working
-✅ Rocket built
-⏳ Phase 4: Instrumented launch pending custom payload rocket
+- ✅ Flight computer electronics complete and tested
+- ✅ Flight unit soldered on solderable breadboard, confirmed working
+- ✅ Rocket built
+- ⏳ Phase 4: Instrumented launch pending custom payload rocket
 
 ## Features
 - Real-time altitude logging via BMP388 barometric pressure sensor
