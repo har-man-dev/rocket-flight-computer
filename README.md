@@ -6,7 +6,8 @@ An Arduino-based flight computer that logs real-time altitude and acceleration d
 - ✅ Flight computer electronics complete and tested
 - ✅ Flight unit soldered on solderable breadboard, confirmed working
 - ✅ Rocket built
-- ⏳ Phase 4: Instrumented launch pending custom payload rocket
+- ✅ Bench test completed and launch/landing detection verified (see Testing & Debugging below)
+- ⏳ Phase 4: Instrumented flight launch pending larger rocket airframe
 
 ## Features
 - Real-time altitude logging via BMP388 barometric pressure sensor
@@ -35,6 +36,22 @@ An Arduino-based flight computer that logs real-time altitude and acceleration d
 
 ## Build Log
 See [BUILDLOG.md](BUILDLOG.md) for detailed progress notes.
+
+## Testing & Debugging
+
+Ran a hand lift bench test (FLT008) before the rocket was flight ready, since the electronics 
+were too heavy for the original airframe. This uncovered a real bug: noise in the first couple 
+of accelerometer readings right after sensor initialization was large enough to falsely trigger 
+launch detection before any real motion occurred.
+
+Fixed it by adding a settling period after MPU initialization and calibrating the launch and 
+landing thresholds against a measured resting baseline instead of hardcoded values.
+
+Verified the fix with a second test (FLT010), confirmed via Serial output that the system 
+correctly waited for a real motion event, printed LAUNCHED only once actual motion was detected, 
+and printed LANDED after a sustained ten second rest period.
+
+Both raw flight logs are in [/flight-logs](flight-logs).
 
 ## Goals
 - Flight unit soldered and confirmed working September 2026
