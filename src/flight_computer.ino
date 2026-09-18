@@ -17,6 +17,8 @@ bool launched = false;
 bool landed = false;
 unsigned long landingTimer = 0;
 float baseAltitude = 0;
+int16_t restAZ = 0;
+#define LANDING_ACCEL_MARGIN 1500
 char filename[12];
 
 // Kalman filter variables for altitude
@@ -67,6 +69,24 @@ void setup() {
     while (1);
   }
 
+  // Let the MPU6050 settle after initialization, and measure the actual
+  // resting AZ value instead of assuming one. The first several readings
+  // right after initialize()/setFullScaleAccelRange() can be noise spikes
+  // large enough to falsely trigger launch detection, so read them here
+  // and use them to calibrate a real baseline rather than logging them.
+  int16_t junkAx, junkAy, junkAz, junkGx, junkGy, junkGz;
+  for (int i = 0; i < 10; i++) {
+    mpu.getMotion6(&junkAx, &junkAy, &junkAz, &junkGx, &junkGy, &junkGz);
+    delay(20);
+  }
+  long azSum = 0;
+  for (int i = 0; i < 20; i++) {
+    mpu.getMotion6(&junkAx, &junkAy, &junkAz, &junkGx, &junkGy, &junkGz);
+    azSum += junkAz;
+    delay(20);
+  }
+  restAZ = azSum / 20;
+
   if (!SD.begin(CS_PIN)) {
     Serial.println(F("SD fail"));
     while (1);
@@ -100,7 +120,7 @@ void setup() {
   baseAltitude = altSum / 30.0;
   kalmanAlt = baseAltitude;
 
-  for (int i = 0; i < ACCEL_SAMPLES; i++) accelBuffer[i] = 17000;
+  for (int i = 0; i < ACCEL_SAMPLES; i++) accelBuffer[i] = restAZ;
 
   Serial.print(F("Ready. File: "));
   Serial.println(filename);
@@ -159,7 +179,7 @@ void loop() {
     dataFile.flush();
   }
 
-  if (launched && abs(smoothedAlt) < 5 && az < 18000) {
+  if (launched && abs(smoothedAlt) < 5 && abs(az - restAZ) < LANDING_ACCEL_MARGIN) {
     if (landingTimer == 0) landingTimer = millis();
     if (millis() - landingTimer > LANDING_TIME) {
       landed = true;
